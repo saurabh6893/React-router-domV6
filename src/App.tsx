@@ -1,9 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
-import AboutPage from './Pages/AboutPage'
-import SearchPage from './Pages/SearchPage'
-import Error from './Pages/Error'
+
+import SearchPage from './Pages/Search/SearchPage'
+import Error from './Pages/404/Error'
 import Home from './Pages/Home'
+import AboutPage from './Pages/About/AboutPage'
+import FormPage from './Pages/FormPage/FormPage'
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/about' element={<AboutPage />} />
           <Route path='/search' element={<SearchPage />} />
+          <Route path='/form' element={<FormPage />} />
           <Route path='*' element={<Error />} />
         </Route>
       </Routes>

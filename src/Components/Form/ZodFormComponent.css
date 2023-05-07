@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.formCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #f9f9f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 450px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+input:focus + label {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  .formCard {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .formCard {
+    height: 70vh;
+  }
+
+  input {
+    font-size: 16px;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1024px) {
+  .formCard {
+    height: 80vh;
+  }
+}
