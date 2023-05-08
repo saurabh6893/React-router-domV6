@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { families } from '../../Data/familyData'
 import { useTable } from 'react-table'
+import './SearchPage.css'
 const SearchPage = () => {
   const data = useMemo(() => families, [])
   const columns: any = useMemo(
