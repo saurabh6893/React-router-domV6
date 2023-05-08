@@ -97,6 +97,5 @@ export const families = [
     "primary": "555-6666",
     "secondary": "",
     "password": "stu901",
-
   }
 ]
